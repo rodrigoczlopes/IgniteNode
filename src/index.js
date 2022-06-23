@@ -46,5 +46,8 @@ app.delete("/courses/:id", (request, response) => {
   ]);
 });
 
+app.get("/api", (request, response) => {
+  return response.json('Hello');
+});
 
 app.listen(3333);
